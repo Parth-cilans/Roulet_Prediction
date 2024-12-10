@@ -217,7 +217,7 @@ def page_1():
         
         if 'predicted_values' in st.session_state:
                 pred_values_list = st.session_state['predicted_values'].split()
-                
+                st.success(pred_values_list)                
                 if len(pred_values_list) >= 7:
                     predictions = {
                         "Series": pred_values_list[0],
