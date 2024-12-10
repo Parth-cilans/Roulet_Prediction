@@ -1,5 +1,5 @@
-import streamlit as st
-import pandas as pd
+import streamlit as st # type: ignore
+import pandas as pd # type: ignore
 from run import predict_values, add_product_features, predict_continuous_values
 from src.PossibleNumber import get_predicted_number
 from src.PositionAnalyzer import PatternPositionAnalyzer
@@ -8,7 +8,7 @@ from src.calculator import PatternProbabilityCalculator
 from src.Predict_features import predict_features_from_number
 from src.Strategy2 import find_next_numbers_and_features, standardize_values, calculate_feature_percentages , get_last_n_numbers_and_frequent_features
 from utils.utils import file_path
-import numpy as np
+import numpy as np # type: ignore
 import logging
 
 # Set up logging
