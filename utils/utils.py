@@ -36,7 +36,7 @@ GROUP_MAP = {
 }
 
 
-file_path = 'data/Example.xlsx'
+file_path = 'data/data.xlsx'
 
 
 
