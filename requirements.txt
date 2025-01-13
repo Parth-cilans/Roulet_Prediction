@@ -3,3 +3,7 @@ streamlit
 pandas
 numpy
 openpyxl
+torch
+torchvision
+scikit-learn
+imbalanced-learn
