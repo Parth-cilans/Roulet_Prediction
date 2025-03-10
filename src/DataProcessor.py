@@ -40,10 +40,12 @@ class ProductDataProcessor:
         if end is None :
             end = len(self.df)
         if end == 0 :
-            end = len(self.df)
+            end = len(self.df) 
+        
         
         product_data = self.df[start:end]
-
+        
+        
         series = product_data['series'].tolist()
         dozen = product_data['Dozen'].tolist()
         parity = product_data['parity'].tolist()

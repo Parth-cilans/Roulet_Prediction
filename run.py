@@ -21,9 +21,8 @@ def predict_values(start_number=0,initial_patern_length = 5,end_pattern_length =
         'Parity': parity,
         'Color': color,
         'Dozen': dozen,
-        'Group': group,
+        'Group': group,     
     }
-    
     for _, data in categories.items():
         calculator = PatternProbabilityCalculator(data ,initial_patern_length, end_pattern_length)
         _, _, _ = calculator.calculate_next_probabilities()  
@@ -34,7 +33,7 @@ def predict_values(start_number=0,initial_patern_length = 5,end_pattern_length =
     # Prepare the output
     # predicted_values_str = " ".join(predicted_values)
     predicted_values_str = " ".join(map(str, predicted_values))
-
+    
     return predicted_values_str
 
 
